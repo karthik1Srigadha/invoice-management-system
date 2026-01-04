@@ -30,12 +30,13 @@ function Login() {
 
   return (
     <div className="auth">
-      <h2>Login</h2>
-      <input placeholder="Email" onChange={e => setEmail(e.target.value)} />
-      <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
-      <button onClick={login}>Login</button>
-      <p onClick={() => navigate("/signup")}>Create account</p>
-    </div>
+  <h2>Login</h2>
+  <input placeholder="Email" onChange={e => setEmail(e.target.value)} />
+  <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
+  <button onClick={login}>Login</button>
+  <p onClick={() => navigate("/signup")}>Create account</p>
+</div>
+
   );
 }
 

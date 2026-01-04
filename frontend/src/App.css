@@ -124,3 +124,76 @@ input, select {
 
 
 
+body {
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.invoice-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.right {
+  text-align: right;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.status.paid { background: #d1fae5; color: #065f46; }
+.status.pending { background: #fef3c7; color: #92400e; }
+.status.unpaid { background: #fee2e2; color: #991b1b; }
+
+.delete {
+  background: #dc2626;
+  margin-top: 6px;
+}
+
+.auth {
+  width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.auth input, .auth select {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+}

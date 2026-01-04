@@ -28,43 +28,22 @@ function InvoiceForm() {
       })
     });
 
-    alert("Invoice Created Successfully");
     navigate("/home");
   };
 
   return (
-    <div className="container">
+    <div className="auth">
       <h2>Create Invoice</h2>
 
-      <input
-        placeholder="Invoice Number"
-        value={invoiceNumber}
-        onChange={e => setInvoiceNumber(e.target.value)}
-      />
+      <input placeholder="Invoice Number" onChange={e => setInvoiceNumber(e.target.value)} />
+      <input placeholder="Client Name" onChange={e => setClientName(e.target.value)} />
+      <input type="date" onChange={e => setDate(e.target.value)} />
+      <input type="number" placeholder="Amount" onChange={e => setAmount(e.target.value)} />
 
-      <input
-        placeholder="Client Name"
-        value={clientName}
-        onChange={e => setClientName(e.target.value)}
-      />
-
-      <input
-        type="date"
-        value={date}
-        onChange={e => setDate(e.target.value)}
-      />
-
-      <input
-        type="number"
-        placeholder="Amount"
-        value={amount}
-        onChange={e => setAmount(e.target.value)}
-      />
-
-      <select value={status} onChange={e => setStatus(e.target.value)}>
+      <select onChange={e => setStatus(e.target.value)}>
+        <option>Pending</option>
         <option>Paid</option>
         <option>Unpaid</option>
-        <option>Pending</option>
       </select>
 
       <button onClick={submitInvoice}>Save Invoice</button>

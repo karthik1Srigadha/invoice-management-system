@@ -31,12 +31,13 @@ function Signup() {
 
   return (
     <div className="auth">
-      <h2>Sign Up</h2>
-      <input placeholder="Name" onChange={e => setName(e.target.value)} />
-      <input placeholder="Email" onChange={e => setEmail(e.target.value)} />
-      <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
-      <button onClick={signup}>Register</button>
-    </div>
+  <h2>Sign Up</h2>
+  <input placeholder="Name" onChange={e => setName(e.target.value)} />
+  <input placeholder="Email" onChange={e => setEmail(e.target.value)} />
+  <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
+  <button onClick={signup}>Register</button>
+</div>
+
   );
 }
 
