@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.auth {
+  width: 300px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth input, .auth button {
+  margin: 8px 0;
+  padding: 8px;
+}
+
+/* iOS-style soft background */
+body {
+  background-color: #f2f2f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Card container */
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* iOS-style button */
+button {
+  border-radius: 12px;
+  border: none;
+  background-color: #007aff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #005fcc;
+}
+
+/* Inputs */
+input, select {
+  border-radius: 10px;
+  border: 1px solid #d1d1d6;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* Invoice row */
+.invoice-item {
+  background: #f9f9fb;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Status badges */
+.status {
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.paid {
+  background: #d1f5e0;
+  color: #007a3d;
+}
+
+.unpaid {
+  background: #ffe0e0;
+  color: #c10000;
+}
+
+.pending {
+  background: #fff2cc;
+  color: #a06a00;
+}
+
+
+
+
